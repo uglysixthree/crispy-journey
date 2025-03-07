@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 .head {
     width: 100%;
     height: 100vh;
@@ -6,45 +8,96 @@
 
 header {
     width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 175px / 1080px * 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
-.head_container {
-    max-width: 85%;
+.head-inner {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3vh;
+    // padding-top: 3vh;
 }
 
-.head_container img {
-    width: 255px;
-    height: 131px;
+.head-inner img {
+    // width: 233px;
+    height: 131px / 210px * 100%;
 }
 
-.head_container a {
+.head-inner a {
     text-decoration: none;
     font-size: 26px;
     color: #000000;
     opacity: 0.77;
     font-weight: 300;
     transition: 0.5s;
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
-.head_container a:hover {
+.head-inner a:hover {
     font-weight: 500;
     font-size: 28px;
+
+    border-top: 3px solid black;
 }
 
-.a_about-us {
-    padding: 10px;
+.head-inner a:last-child {
+    // display: flex;
+    padding: 15px 25px;
     background: #000000;
-    // opacity: 0.77;
-    a {
-        color: #fff;
+    opacity: 0.77;
+    color: #ffffff;
+    height: auto;
+    border: 0px;
+    &:hover {
+        border: 0px;
+    }
+}
+
+// content
+
+.head-content {
+    height: (1080px - 175px) / 1080px * 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // transform: translateY(-10%);
+    margin-top: -3%;
+    .img {
+        position: absolute;
+        left: 0;
+        height: 720px / 1080px * 100vh;
+        width: 50%;
+        overflow: hidden;
+        z-index: 1;
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+    .text {
+        // animation-iteration-count: infinite;
+        text-align: right;
+        z-index: 2;
+        opacity: 0.77;
+        h1 {
+            font-size: 136px;
+            font-weight: 900;
+        }
+        p {
+            font-size: 40px;
+        }
     }
 }
