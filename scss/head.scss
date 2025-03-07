@@ -32,11 +32,19 @@ header {
     color: #000000;
     opacity: 0.77;
     font-weight: 300;
+    transition: 0.5s;
+}
+
+.head_container a:hover {
+    font-weight: 500;
+    font-size: 28px;
 }
 
 .a_about-us {
-    padding: 5px;
+    padding: 10px;
     background: #000000;
     // opacity: 0.77;
-    color: #fff;
+    a {
+        color: #fff;
+    }
 }
