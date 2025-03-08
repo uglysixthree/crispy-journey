@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .services {
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
 @-webkit-keyframes plast-rotate {
@@ -26,7 +28,7 @@
 }
 .services-inner {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,4 +43,15 @@
   height: 80%;
   -webkit-animation: plast-rotate 3s infinite linear;
           animation: plast-rotate 3s infinite linear; /* Исправлено на linear */
+}
+
+.services_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  opacity: 0.5;
 }
